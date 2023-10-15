@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云签到系统</title>
+    <link rel="stylesheet" href="./static/pkg/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="./static/pkg/jquery -3.6.1/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="./static/images/R-C.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form action="./controllers/office/getSign.php" method="get">
+                    <h3>河财大云签到系统</h3>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">姓名</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="username"
+                            aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">请勿代替打卡</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">学号</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1" name="snumber">
+                    </div>
+                    <!-- <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary">立即打卡</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./static/pkg/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
